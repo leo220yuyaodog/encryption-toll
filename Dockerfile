@@ -1,4 +1,5 @@
 FROM ubuntu:20.04
+ARG DEBIAN_FRONTEND=noninteractive
 ADD sources.list /etc/apt/
 RUN apt-get update \
     && apt-get -y install git make gcc golang nodejs \
